@@ -55,7 +55,6 @@ class FileTreeProvider {
 				console.log( element.getChildren())
 				return element.getChildren();
 			}
-			console.log('getFiles---', element)
 			return new FileNode(element.label, element.resourceUri, vscode.TreeItemCollapsibleState.None, {
 					command: 'extension.openFile',
 					title: 'Open File',
@@ -78,14 +77,10 @@ class FileTreeProvider {
 					const value = tree[key];
 					const currentWork = getCurrentWorkspace();
 					if (currentWork) {
-						console.log('convertToNodes---', currentWork, label)
 						label = label.split(currentWork);
-						label = label.length > 1 ? label[1] : label[0];
-						console.log('convertToNodes--- labels', label)
+						label = (label.length > 1 ? label[1] : label[0]) || '/';
 					}
 					if (typeof value === 'string') {
-						// console.log('convertToNodes---', fullPath, value)
-					
 							return new FileNode(label, fullPath, vscode.TreeItemCollapsibleState.None, {
 									command: 'extension.openFile',
 									title: 'Open File',

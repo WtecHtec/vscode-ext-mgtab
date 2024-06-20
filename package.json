@@ -1,7 +1,7 @@
 {
   "name": "mgtab",
   "displayName": "",
-  "description": "a manganese open tab file",
+  "description": "提供了强大的标签页管理功能，让你轻松管理和组织大量打开的标签页。",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.90.0"

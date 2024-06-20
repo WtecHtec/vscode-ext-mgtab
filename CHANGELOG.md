@@ -1,9 +1,1 @@
-# Change Log
-
-All notable changes to the "sr7" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+提供了强大的标签页管理功能，让你轻松管理和组织大量打开的标签页。
